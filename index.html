@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple AngularJS App</title>
+    <!-- AngularJS libraries -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+    <!-- Components -->
+    <script src="app/shared/header/header.component.js"></script>
+    <script src="app/shared/footer/footer.component.js"></script>
+    <script src="app/components/home/home.component.js"></script>
+    <script src="app/components/ai-solutions/ai-solutions.component.js"></script>
+    <script src="app/components/features/features.component.js"></script>
+    <script src="app/components/about/about.component.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+</head>
+
+<body ng-app="algo-solve">
+<app-header></app-header>
+<div ng-view></div>
+<app-footer></app-footer>
+</body>
+</html>
