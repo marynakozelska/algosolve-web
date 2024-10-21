@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --primary-teal: rgba(54, 205, 183, 1);
+    --primary-indigo: rgba(120, 114, 216, 1);
+    --primary-background: rgba(16, 16, 16, 1);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background: var(--primary-background);
+    color: white;
+}
+
+.content {
+    /*margin-top: 5%;*/
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.col-teal {
+    color: var(--primary-teal)!important;
 }
