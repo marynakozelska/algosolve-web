@@ -1,1 +1,103 @@
-<h1>This is home page</h1>
+<div class="home">
+    <div class="home-banner">
+        <div class="ellipse-blur"></div>
+        <h1>Where Algorithms Meet Solutions</h1>
+        <p>
+            Experience seamless problem-solving with AI-powered and mathematical tools
+        </p>
+
+        <button class="regular-button">
+            Start for free
+        </button>
+    </div>
+
+    <div class="block-ai">
+        <div class="block-ai-header">
+            <p>Our services</p>
+            <h2>Transform your data</h2>
+            <h2 class="col-teal">with AI.</h2>
+        </div>
+        <div class="block-ai-algorithms">
+            <div class="block-card">
+                <h3>Regression Algorithms</h3>
+                <p>Allow you to predict continuous outcomes from input data.</p>
+            </div>
+            <div class="block-card">
+                <h3>Clustering Algorithms</h3>
+                <p>Group data points based on similarity, uncovering hidden structures in your data.</p>
+            </div>
+            <div class="block-card">
+                <h3>Classification Algorithms</h3>
+                <p>Help you assign labels to data points based on input features.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-math">
+        <div class="ellipse-blur-violet"></div>
+        <div class="block-math-algorithms">
+            <div class="block-algorithm">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55 30H45L37.5 52.5L22.5 7.5L15 30H5" stroke="#36CDB7" stroke-width="4"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                <p>Statistical<br>Calculations</p>
+            </div>
+
+            <div class="block-algorithm">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.75 10.525L30 17.025L41.25 10.525M18.75 49.475V36.5L7.5 30M52.5 30L41.25 36.5V49.475M8.175 17.4L30 30.025L51.825 17.4M30 55.2V30M52.5 40V20C52.4991 19.1232 52.2676 18.262 51.8288 17.5029C51.3901 16.7438 50.7593 16.1134 50 15.675L32.5 5.675C31.7399 5.23616 30.8777 5.00513 30 5.00513C29.1223 5.00513 28.2601 5.23616 27.5 5.675L10 15.675C9.24066 16.1134 8.60995 16.7438 8.17115 17.5029C7.73236 18.262 7.5009 19.1232 7.5 20V40C7.5009 40.8768 7.73236 41.738 8.17115 42.4971C8.60995 43.2562 9.24066 43.8866 10 44.325L27.5 54.325C28.2601 54.7638 29.1223 54.9949 30 54.9949C30.8777 54.9949 31.7399 54.7638 32.5 54.325L50 44.325C50.7593 43.8866 51.3901 43.2562 51.8288 42.4971C52.2676 41.738 52.4991 40.8768 52.5 40Z"
+                          stroke="#36CDB7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>Probability and<br>Combinatorics</p>
+            </div>
+        </div>
+
+        <div class="block-math-header">
+            <h2>Meet your</h2>
+            <h2>Digital <span class="col-indigo">Math Toolbox</span></h2>
+        </div>
+    </div>
+
+    <div class="block-why">
+        <h1>Why choose<br>AlgoSolve?</h1>
+
+        <div class="block-why-list">
+            <div class="block-why-item">
+                <h2>01</h2>
+                <p>User-Friendly Interface</p>
+            </div>
+            <div class="block-why-item">
+                <h2>02</h2>
+                <p>Comprehensive Toolset</p>
+            </div>
+            <div class="block-why-item">
+                <h2>03</h2>
+                <p>AI-Powered Precision</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-faq">
+        <h2>Frequently Asked <br><span class="col-teal">Questions</span></h2>
+
+        <div>
+            <div class="faq-item" ng-repeat="faq in $ctrl.faqs">
+                <div class="faq-question" ng-click="$ctrl.toggleFaq(faq)">
+                    <span>{{ faq.question }}</span>
+                    <button class="toggle-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path ng-attr-d="{{ faq.isOpen ? 'M5 12H19' : 'M12 5V19M5 12H19' }}"
+                                  stroke="#F5F5F5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-answer" ng-if="faq.isOpen">
+                    {{ faq.answer }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

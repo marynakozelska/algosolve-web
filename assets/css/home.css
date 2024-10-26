@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+.home p {
+    font-size: 18px;
+}
+
+.home-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 80px auto;
+    padding: 5%;
+}
+
+.home-banner h1 {
+    font-size: 60px;
+    font-family: 'Instrument Sans', serif;
+    font-weight: 700;
+    line-height: 78px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg, #36CDB7 0%, #D0D0D0 49.5%, #625ADA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-banner p {
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 3%;
+}
+
+.ellipse-blur {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+    top: 20%;
+
+    border-radius: 80%;
+    opacity: 0.8;
+    -webkit-filter: blur(200px);
+    -webkit-transform: scale(1, 0.4);
+
+    background: rgba(54, 205, 183);
+    box-shadow: 0px 0px 250px 20px rgba(54, 205, 183, 0.5);
+    z-index: 50;
+}
+
+.ellipse-blur-violet {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: -20%;
+    top: 150%;
+
+    border-radius: 80%;
+    opacity: 0.6;
+    -webkit-filter: blur(200px);
+    -webkit-transform: scale(1, 0.8);
+
+    background: var(--primary-indigo);
+    box-shadow: 0px 0px 250px 20px var(--primary-indigo);
+}
+
+.block-ai {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.block-ai-header {
+    padding-left: 10%;
+    font-family: 'Instrument Sans', serif;
+}
+
+.block-ai-header h2,
+.block-math-header h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.block-ai-header p {
+    margin: 0;
+}
+
+.block-ai-algorithms {
+    display: flex;
+    flex-direction: row;
+}
+
+.block-card {
+    border: 1px solid white;
+    border-radius: 14px;
+    margin: 0 3%;
+    padding: 2%;
+    width: 30%;
+    height: auto;
+    font-family: 'Instrument Sans', serif;
+}
+
+.block-card h3 {
+    color: var(--primary-teal);
+    font-size: 23px;
+}
+
+.block-math {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 16% 8%;
+    font-family: 'Instrument Sans', serif;
+}
+
+.block-math-header {
+    text-align: right;
+}
+
+.block-math-algorithms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+.block-algorithm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-why {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.block-why h1 {
+    font-family: 'Instrument Sans', serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #36CDB7 0%, #D0D0D0 49.5%, #625ADA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.block-why h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0 5%;
+    text-shadow: 0 0 5px var(--primary-indigo),
+    0 0 25px var(--primary-indigo),
+    0 0 50px var(--primary-indigo),
+    0 0 200px var(--primary-indigo);
+}
+
+.block-why-list {
+    align-content: center;
+    padding: 0 20%;
+}
+
+.block-why-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5%;
+}
+
+.block-faq {
+    margin: 10% 8%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #F5F5F5;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.faq-answer {
+    background-color: #444;
+    color: #F5F5F5;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* When the FAQ is open, set the desired max-height and padding */
+.faq-answer.ng-enter-active, .faq-answer.ng-leave-active {
+    max-height: 200px; /* Adjust based on content */
+    padding: 10px;
+}
+
+/* These classes are automatically added by ngAnimate */
+.faq-answer.ng-enter, .faq-answer.ng-leave {
+    max-height: 0;
+    padding: 0 10px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.minus-icon {
+    transform: rotate(90deg);
+}

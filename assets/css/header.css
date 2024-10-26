@@ -8,8 +8,11 @@
     align-items: center;
     padding: 20px;
 
+    background-color: var(--primary-background);
     border: white 1px solid;
     border-radius: 10px;
+
+    z-index: 500;
 }
 
 .header-block a {

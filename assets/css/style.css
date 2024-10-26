@@ -11,10 +11,7 @@ body {
     margin: 20px;
     background: var(--primary-background);
     color: white;
-}
-
-.content {
-    /*margin-top: 5%;*/
+    font-size: 16px;
 }
 
 .logo {
@@ -23,4 +20,23 @@ body {
 
 .col-teal {
     color: var(--primary-teal)!important;
+}
+
+.col-indigo {
+    color: var(--primary-indigo)!important;
+}
+
+.regular-button {
+    background-color: var(--primary-teal);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+    width: 164px;
+    height: 45px;
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+    line-height: 1.15;
 }
