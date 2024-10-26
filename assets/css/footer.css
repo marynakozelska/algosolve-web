@@ -1,0 +1,36 @@
+.footer-block {
+    padding: 20px;
+    border: white 1px solid;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+.footer-block a,
+.footer-block p {
+    font-family: "Lexend Deca", sans-serif;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu a {
+    margin: 20px;
+}
+
+.social-media {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+

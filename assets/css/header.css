@@ -1,0 +1,25 @@
+.header-block {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    background-color: var(--primary-background);
+    border: white 1px solid;
+    border-radius: 10px;
+
+    z-index: 500;
+}
+
+.header-block a {
+    font-family: "Lexend Deca", sans-serif;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+}
+

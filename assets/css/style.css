@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --primary-teal: rgba(54, 205, 183, 1);
+    --primary-indigo: rgba(120, 114, 216, 1);
+    --primary-background: rgba(16, 16, 16, 1);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background: var(--primary-background);
+    color: white;
+    font-size: 16px;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.col-teal {
+    color: var(--primary-teal)!important;
+}
+
+.col-indigo {
+    color: var(--primary-indigo)!important;
+}
+
+.regular-button {
+    background-color: var(--primary-teal);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+    width: 164px;
+    height: 45px;
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+    line-height: 1.15;
 }
